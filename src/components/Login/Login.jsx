@@ -30,8 +30,8 @@ export default function Login(props) {
         "nom":tab[0].value,
 "description":tab[1].value,
        "prix": parseInt(tab[2].value),
-      "image":"https://cdn.idealo.com/folder/Product/6751/2/6751285/s4_produktbild_mittelgross/yves-saint-laurent-libre-eau-de-parfum-50ml.jpg",
-       "tail": parseInt( tab[4].value) 
+      "image":tab[3].value,
+      "tail": parseInt( tab[4].value) 
         }
       }
 
@@ -42,9 +42,9 @@ console.log(data,tab);
   return (
 
     <>
-    <form onSubmit={Validation} id="fromControl" style={{width:300}}>
+    <form className='formule mt-2' onSubmit={Validation} id="fromControl">
  {tab.map((elem,index)=>{return(
-      <div key={index} className="form-group">
+      <div key={index} className="form-group mt-2">
     <input  key={index} type={elem.type} className="form-control"  onChange={(e)=>on(e,elem)} placeholder={elem.place}/>
      </div>
  )})}
@@ -53,7 +53,7 @@ console.log(data,tab);
 
  
 
-  <button type="submit"  className="btn btn-primary">Submit</button>
+  <button type="submit"  className="btn btn-primary mb-2 mt-2">Submit</button>
    <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
 
 </form>

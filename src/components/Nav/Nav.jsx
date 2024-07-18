@@ -7,9 +7,9 @@ export default function Nav() {
  <> <nav className='navbar'>
   <h1>jefpjs</h1>
   
-   <Link to="/user">    <div className='btn btn-danger'> Landing</div>  </Link>
-   <Link to="/">  <div className='btn btn-danger'> about</div> </Link>
-   <Link to="produit">  <div className='btn btn-danger'> Product</div> </Link>
+   <Link to="/slide">  <div className='btn btn-danger'> aceille</div> </Link>
+  <Link to="/user">    <div className='btn btn-danger'> produit</div>  </Link>
+    <Link to="produit">  <div className='btn btn-danger'> contact test</div> </Link>
    <Link to="home">     <div className='btn btn-danger'> espace Client</div></Link>
      </nav>
 

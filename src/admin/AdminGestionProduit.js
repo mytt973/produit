@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import api from '../api/api';
-import Produit from '../model/Produit';
+import api from '../api/api.js';
+import Produit from '../model/Produit.js';
 
 export default function AdminGestionProduit() {
     const [ produits,setProduits]=useState([]);
@@ -35,6 +35,8 @@ export default function AdminGestionProduit() {
                 <td className='col'>nom</td>
                 <td className='col'>image</td>
                 <td className='col'>prix</td>
+                <td className='col'>add</td>
+                <td className='col'>delete</td>
             </tr>
         </thead>
         <tbody>
@@ -43,6 +45,8 @@ export default function AdminGestionProduit() {
         <td className='col'>{elem.nom}</td>
         <td className='col'><img src={elem.image} width={50} height="auto" alt='missing'/></td>
         <td className='col'>{elem.prix}</td>
+        <td className='col'> <button  >+ pour ajouter</button> </td>
+        <td className='col'> <button >- pour reduire</button> </td>
          </tr>
  )})}
 

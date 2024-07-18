@@ -1,7 +1,6 @@
 import axios from 'axios';
-
 import React, { useState } from 'react'
-import { ProduitL, Login } from '../../../components';
+import { ProduitL, Login } from '../../components';
 
 export default function Produit() {
     const user = localStorage.getItem("use");
