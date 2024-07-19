@@ -48,11 +48,7 @@ console.log(data,tab);
     <input  key={index} type={elem.type} className="form-control"  onChange={(e)=>on(e,elem)} placeholder={elem.place}/>
      </div>
  )})}
-
-  
-
- 
-
+  {props.area&&(<textarea className='form-control mt-2' placeholder='give your message'></textarea>)}
   <button type="submit"  className="btn btn-primary mb-2 mt-2">Submit</button>
    <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
 

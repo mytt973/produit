@@ -20,7 +20,7 @@ html{ background-color: #d7d0d0;}
     footer {
         width: 100%;
         opacity: 0.4;
-  
+  position: relative;bottom: -110px;
         background-color: #004669;
         color: white;
         text-align: center;

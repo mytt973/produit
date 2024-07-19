@@ -56,3 +56,18 @@ export default function AdminGestionProduit() {
 </>
   )
 }
+// const tog =()=>{setFromulaire(!fromulaire)}
+// const [fromulaire,setFromulaire]=useState(false)
+
+// const  onAdd =async(data)=>{
+//     try {
+//         const reponce= await axios.post("https://api-dev.akov-developpement.fr/api/produit/save",data  ) 
+//         console.log(reponce);
+        
+//     } catch (error) {
+//         console.log("erruer");
+//     }
+// }
+
+// <button onClick={tog}>array+</button>
+// {fromulaire?<Login tab={tab}  onSub={onAdd}/>:<p>not active</p>}

@@ -12,10 +12,10 @@ return(
         <Outlet/>
     </main>
    
-     <div style={{height:200}}></div>
-    <footer>
- <p> miguz@gmail.com</p>
-             <p>  © 2023 Votre entreprise. Tous droits réservés.</p> 
+     
+<footer>
+<p> miguz@gmail.com</p>
+<p>  © 2023 Votre entreprise. Tous droits réservés.</p> 
 </footer>
 
     </>

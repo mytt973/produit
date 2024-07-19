@@ -1,7 +1,9 @@
 import React, {  useState } from 'react'
 import {Login } from '../../components'
 import axios from 'axios'
+import { getTab } from '../../model/Tab'
 import { useNavigate } from 'react-router-dom'
+
 // import api from '../../../api/api'
 // import {  useNaviqgate, } from 'react-router-dom'
 
@@ -10,20 +12,7 @@ export default function Home() {
     const [ info,setInfo]=useState(JSON.parse(localStorage.getItem('use')))
     const navigate = useNavigate();
 
-    // const navigate = useNavigate;
     const  onLogin=async (data)=>{
-
-    //  const fu = ()=>{   api.post('/api/users/save',data).then(function () {
-    //        alert("tu t enregistre")
-    //         console.log("reponce"); 
-    //         navigate('/admin')  
-           
-    //     } 
-    //     ).catch(function (erreur) {
-    //         alert(erreur)
-
-    //     });}
-
         try {
             const  reponce = await axios.post("https://api-dev.akov-developpement.fr/api/users/save",data)
             alert("tu t enregistre");
@@ -32,8 +21,6 @@ export default function Home() {
         console.log("erreur");
     }
 }
-
-
     const onConnection =async (data)=>{
         try {
         const reponce =await axios.post("https://api-dev.akov-developpement.fr/api/users/login",data)
@@ -63,45 +50,6 @@ const onDeconnect=()=>{
 
 
 
-
-
-   const getTab=(boll)=> {
-let tab = boll?[
-    {
-        place:"email",
-        type:"text",
-        value:""
-    },
-    {
-        place:"pass",
-        type:"password",
-        value:""
-    }
-]:[
-    {
-        place:"nom",
-        type:"text",
-        value:""
-    },
-    {
-        place:"prenom",
-        type:"text",
-        value:""
-    },
-    {
-        place:"email",
-        type:"text",
-        value:""
-    },
-    {
-        place:"pass",
-        type:"text",
-        value:""
-    }];
-    return tab;
-}
-
-
   return (
  <>
 
@@ -127,3 +75,14 @@ let tab = boll?[
    </>
   )
 }
+
+    //  const fu = ()=>{   api.post('/api/users/save',data).then(function () {
+    //        alert("tu t enregistre")
+    //         console.log("reponce"); 
+    //         navigate('/admin')  
+           
+    //     } 
+    //     ).catch(function (erreur) {
+    //         alert(erreur)
+
+    //     });}

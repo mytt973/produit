@@ -1,6 +1,6 @@
 
 import { createBrowserRouter,  RouterProvider } from 'react-router-dom';
-import { Accueil, Home, Produit, Slider } from './Pages';
+import { Accueil, Contact, Home, Slider } from './Pages';
 import SiteLyout from './layout/SiteLayout';
 import AdminGestionProduit from './admin/AdminGestionProduit';
 import AdminLayout from './layout/AdminLayout';
@@ -26,7 +26,7 @@ function App() {
           element:<Accueil/>
         },{
           path:"/produit",
-          element:<Produit/>
+          element:<Contact/>
         },{
           path:"/slide",
           element:<Slider/>

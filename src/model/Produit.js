@@ -6,25 +6,5 @@ constructor(description,id,nom,prix,image,tail){
     this.prix=prix;
     this.image=image;
     this.tail=tail;
-
 }
-//     {
-//         place:"nom",
-
-//     {
-//         place:"description",
-// "
-//     },
-//     {
-//         place:"prix",
-
-//     {
-//         place:"image",
-    
-//     },
-//     {
-//         place:"tail",
-
-//     },
-
 }
